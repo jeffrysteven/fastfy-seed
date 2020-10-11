@@ -1,0 +1,22 @@
+{
+  "name": "fastify-seed",
+  "version": "1.0.0",
+  "description": "Fastfiy seed",
+  "main": "./src/app.ts",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc -p tsconfig.build.json --skipLibCheck",
+    "clean": "rm -rf ./build",
+    "start": "./node_modules/ts-node-dev/lib/bin.js --respawn --transpile-only ./src/app.ts",
+    "start:inspect": "./node_modules/ts-node-dev/lib/bin.js --inspect --respawn --transpile-only ./src/app.ts"
+  },
+  "author": "@jeffrysteven",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
+  }
+}
